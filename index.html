@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aryan Lohan — Software Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Outfit (display) + DM Sans (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">AL</div>
+      <div class="loader-track"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Aryan<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#skills"       class="nav-link">Skills</a></li>
+        <li><a href="#projects"     class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#education"    class="nav-link">Education</a></li>
+        <li><a href="#contact"      class="nav-link contact-nav">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-inner">
+      <div class="hero-text reveal">
+        <span class="hero-eyebrow">MCA Student · Available for Internships</span>
+        <h1>Hi, I'm<br/><span class="hero-name-grad">Aryan Lohan</span></h1>
+        <p class="hero-sub">
+          <span id="typed"></span><span class="typed-cursor">|</span>
+        </p>
+        <p class="hero-desc">I build clean, purposeful software. B.Sc (PCM) background, MCA with <strong>8.05 SGPA</strong> in Semester I — bridging analytical thinking with modern development.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-fill">View Projects</a>
+          <a href="resume/resume.pdf" target="_blank" class="btn btn-line" download>Download CV</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/aryanlohan-09"            target="_blank" class="social-pill" aria-label="GitHub"><i class="ri-github-fill"></i><span>GitHub</span></a>
+          <a href="https://www.linkedin.com/in/aaryanlohaan/"   target="_blank" class="social-pill" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i><span>LinkedIn</span></a>
+          <a href="mailto:aryanlohan92@gmail.com"                               class="social-pill" aria-label="Email"><i class="ri-mail-line"></i><span>Email</span></a>
+        </div>
+      </div>
+      <div class="hero-aside reveal">
+        <div class="stat-stack">
+          <div class="stat-item">
+            <span class="stat-n">8.05</span>
+            <span class="stat-l">MCA Sem I SGPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-n">4+</span>
+            <span class="stat-l">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-n">9+</span>
+            <span class="stat-l">Technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-n">5+</span>
+            <span class="stat-l">Achievements</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="sec-label reveal">About Me</div>
+      <div class="about-layout">
+        <div class="about-left reveal">
+          <h2 class="sec-heading">Turning logic into<br/><em>working software</em></h2>
+          <p>I'm an MCA student with a B.Sc (PCM) background — which gives me a precise, analytical lens when approaching code. I don't just write programs; I think through problems.</p>
+          <p>Before committing to software development, I cleared multiple national-level defence examinations — NDA, AFCAT, Agniveer Vayu, and Army Clerk. That chapter built the discipline and mental toughness I bring to every project and deadline.</p>
+          <div class="trait-row">
+            <span class="trait">Problem Solver</span>
+            <span class="trait">Detail-Oriented</span>
+            <span class="trait">Quick Learner</span>
+            <span class="trait">Team Player</span>
+          </div>
+        </div>
+        <div class="about-right reveal">
+          <div class="profile-card">
+            <div class="profile-avatar">
+  <img src="images/profile.jpg" alt="Aryan Lohan" />
+</div>
+            <div class="profile-rows">
+              <div class="pr"><span class="pk">Name</span><span class="pv">Aryan Lohan</span></div>
+              <div class="pr"><span class="pk">Degree</span><span class="pv">MCA — Current</span></div>
+              <div class="pr"><span class="pk">Sem I SGPA</span><span class="pv highlight-v">8.05</span></div>
+              <div class="pr"><span class="pk">Location</span><span class="pv">Uttarakhand, India</span></div>
+              <div class="pr"><span class="pk">Status</span><span class="pv available-v">Open to Opportunities</span></div>
+              <div class="pr"><span class="pk">Email</span><span class="pv">aryanlohan92@gmail.com</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills" class="section section-tinted">
+    <div class="container">
+      <div class="sec-label reveal">Skills</div>
+      <h2 class="sec-heading reveal">Technologies I work with</h2>
+      <div class="skills-layout">
+        <div class="skill-row reveal">
+          <div class="sk-meta"><div class="sk-icon"><i class="ri-terminal-box-fill"></i></div><div><h4>C Language</h4><span>Procedural programming, memory management</span></div></div>
+          <div class="sk-right"><div class="sk-bar"><div class="sk-fill" style="--w:75%"></div></div><span class="sk-val">75%</span></div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="sk-meta"><div class="sk-icon"><i class="ri-code-s-slash-line"></i></div><div><h4>Python</h4><span>Scripting, automation, OOP</span></div></div>
+          <div class="sk-right"><div class="sk-bar"><div class="sk-fill" style="--w:70%"></div></div><span class="sk-val">70%</span></div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="sk-meta"><div class="sk-icon"><i class="ri-javascript-fill"></i></div><div><h4>JavaScript</h4><span>DOM manipulation, ES6+, async</span></div></div>
+          <div class="sk-right"><div class="sk-bar"><div class="sk-fill" style="--w:80%"></div></div><span class="sk-val">80%</span></div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="sk-meta"><div class="sk-icon"><i class="ri-html5-fill"></i></div><div><h4>HTML5</h4><span>Semantic markup, accessibility</span></div></div>
+          <div class="sk-right"><div class="sk-bar"><div class="sk-fill" style="--w:85%"></div></div><span class="sk-val">85%</span></div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="sk-meta"><div class="sk-icon"><i class="ri-css3-fill"></i></div><div><h4>CSS3</h4><span>Flexbox, Grid, animations</span></div></div>
+          <div class="sk-right"><div class="sk-bar"><div class="sk-fill" style="--w:80%"></div></div><span class="sk-val">80%</span></div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="sk-meta"><div class="sk-icon"><i class="ri-database-2-fill"></i></div><div><h4>SQL</h4><span>Queries, joins, CRUD, database design</span></div></div>
+          <div class="sk-right"><div class="sk-bar"><div class="sk-fill" style="--w:72%"></div></div><span class="sk-val">72%</span></div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="sk-meta"><div class="sk-icon"><i class="ri-flow-chart"></i></div><div><h4>DSA in C</h4><span>Arrays, Linked Lists, Trees, Sorting</span></div></div>
+          <div class="sk-right"><div class="sk-bar"><div class="sk-fill" style="--w:68%"></div></div><span class="sk-val">68%</span></div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="sk-meta"><div class="sk-icon"><i class="ri-git-branch-fill"></i></div><div><h4>Git & GitHub</h4><span>Version control, branching, collaboration</span></div></div>
+          <div class="sk-right"><div class="sk-bar"><div class="sk-fill" style="--w:76%"></div></div><span class="sk-val">76%</span></div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="sk-meta"><div class="sk-icon"><i class="ri-server-fill"></i></div><div><h4>Database Concepts</h4><span>DBMS, normalization, ER diagrams</span></div></div>
+          <div class="sk-right"><div class="sk-bar"><div class="sk-fill" style="--w:70%"></div></div><span class="sk-val">70%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="sec-label reveal">Projects</div>
+      <h2 class="sec-heading reveal">Things I've built</h2>
+      <div class="proj-grid">
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <i class="ri-window-line proj-ico"></i>
+            <span class="proj-badge badge-live">Live</span>
+          </div>
+          <h3>Personal Portfolio</h3>
+          <p>Responsive portfolio website with dark theme, glassmorphism design, particle animations, and scroll reveal effects.</p>
+          <div class="proj-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a href="https://github.com/aryanlohan-09" target="_blank" class="proj-link">
+            <i class="ri-github-fill"></i> View on GitHub <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <i class="ri-fingerprint-line proj-ico"></i>
+            <span class="proj-badge badge-concept">Concept</span>
+          </div>
+          <h3>ATM Biometric System</h3>
+          <p>Conceptual ATM system replacing traditional PIN authentication with biometric verification for enhanced security.</p>
+          <div class="proj-stack"><span>IoT</span><span>Security</span><span>Biometrics</span></div>
+          <a href="https://github.com/aryanlohan-09" target="_blank" class="proj-link">
+            <i class="ri-github-fill"></i> View on GitHub <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <i class="ri-file-list-3-line proj-ico"></i>
+            <span class="proj-badge badge-done">Done</span>
+          </div>
+          <h3>Student Result Management</h3>
+          <p>System for managing student records, computing grades, and generating result reports with file-based persistence.</p>
+          <div class="proj-stack"><span>C</span><span>SQL</span><span>File I/O</span></div>
+          <a href="https://github.com/aryanlohan-09" target="_blank" class="proj-link">
+            <i class="ri-github-fill"></i> View on GitHub <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <i class="ri-radar-line proj-ico"></i>
+            <span class="proj-badge badge-done">Done</span>
+          </div>
+          <h3>SDN Failure Detection</h3>
+          <p>Simulates a Software-Defined Networking topology to detect and respond to link and node failure scenarios.</p>
+          <div class="proj-stack"><span>Python</span><span>Networking</span><span>SDN</span></div>
+          <a href="https://github.com/aryanlohan-09" target="_blank" class="proj-link">
+            <i class="ri-github-fill"></i> View on GitHub <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ACHIEVEMENTS ═══ -->
+  <section id="achievements" class="section section-tinted">
+    <div class="container">
+      <div class="sec-label reveal">Achievements</div>
+      <h2 class="sec-heading reveal">Beyond the classroom</h2>
+      <div class="ach-grid">
+
+        <div class="ach-card reveal">
+          <div class="ach-top">
+            <div class="ach-icon def-icon"><i class="ri-shield-star-fill"></i></div>
+            <span class="ach-tag tag-def">Defence</span>
+          </div>
+          <h3>NDA Written Exam</h3>
+          <p>Cleared the National Defence Academy written examination multiple times.</p>
+        </div>
+
+        <div class="ach-card reveal">
+          <div class="ach-top">
+            <div class="ach-icon def-icon"><i class="ri-flight-takeoff-fill"></i></div>
+            <span class="ach-tag tag-def">Defence</span>
+          </div>
+          <h3>AFCAT Qualified</h3>
+          <p>Qualified the Air Force Common Admission Test.</p>
+        </div>
+
+        <div class="ach-card reveal">
+          <div class="ach-top">
+            <div class="ach-icon def-icon"><i class="ri-plane-fill"></i></div>
+            <span class="ach-tag tag-def">Defence</span>
+          </div>
+          <h3>Agniveer Vayu X &amp; Y</h3>
+          <p>Cleared both Technical and Non-Technical groups of Agniveer Vayu.</p>
+        </div>
+
+        <div class="ach-card reveal">
+          <div class="ach-top">
+            <div class="ach-icon def-icon"><i class="ri-sword-fill"></i></div>
+            <span class="ach-tag tag-def">Defence</span>
+          </div>
+          <h3>Army Agniveer Clerk</h3>
+          <p>Cleared the Indian Army Agniveer Clerk examination.</p>
+        </div>
+
+        <div class="ach-card reveal">
+          <div class="ach-top">
+            <div class="ach-icon spo-icon"><i class="ri-trophy-fill"></i></div>
+            <span class="ach-tag tag-spo">Sports</span>
+          </div>
+          <h3>State Bronze — Darts</h3>
+          <p>State Bronze Medalist in Darts · National Level Participant.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EDUCATION ═══ -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="sec-label reveal">Education</div>
+      <h2 class="sec-heading reveal">Academic background</h2>
+      <div class="edu-list">
+
+        <div class="edu-card reveal">
+          <div class="edu-left">
+            <div class="edu-icon"><i class="ri-graduation-cap-fill"></i></div>
+            <div class="edu-line"></div>
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <span class="edu-status">Currently Enrolled</span>
+                <h3>Master of Computer Applications (MCA)</h3>
+                <span class="edu-inst">Ongoing</span>
+              </div>
+              <div class="edu-grade">
+                <span class="grade-num">8.05</span>
+                <span class="grade-lbl">Sem I SGPA</span>
+              </div>
+            </div>
+            <div class="edu-chips">
+              <span>Software Engineering</span><span>DBMS</span><span>Algorithms</span><span>Networks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-left">
+            <div class="edu-icon edu-icon-past"><i class="ri-book-2-fill"></i></div>
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3>B.Sc — Physics, Chemistry, Mathematics</h3>
+                <span class="edu-inst">Sri Dev Suman Uttarakhand University</span>
+              </div>
+              <div class="edu-grade">
+                <span class="grade-num grade-past">6.81</span>
+                <span class="grade-lbl">CGPA</span>
+              </div>
+            </div>
+            <div class="edu-chips">
+              <span>Mathematics</span><span>Physics</span><span>Chemistry</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" class="section section-tinted">
+    <div class="container">
+      <div class="sec-label reveal">Contact</div>
+      <h2 class="sec-heading reveal">Let's work together</h2>
+      <div class="contact-layout">
+
+        <div class="contact-left reveal">
+          <p class="contact-intro">I'm actively looking for internship and placement opportunities in software development. If you have an opening or just want to connect, I'd love to hear from you.</p>
+          <div class="contact-links">
+            <a href="https://github.com/aryanlohan-09" target="_blank" class="clink">
+              <div class="clink-icon"><i class="ri-github-fill"></i></div>
+              <div class="clink-body"><strong>GitHub</strong><span>github.com/aryanlohan-09</span></div>
+              <i class="ri-arrow-right-up-line clink-arr"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aaryanlohaan/" target="_blank" class="clink">
+              <div class="clink-icon"><i class="ri-linkedin-fill"></i></div>
+              <div class="clink-body"><strong>LinkedIn</strong><span>linkedin.com/in/aaryanlohaan</span></div>
+              <i class="ri-arrow-right-up-line clink-arr"></i>
+            </a>
+            <a href="mailto:aryanlohan92@gmail.com" class="clink">
+              <div class="clink-icon"><i class="ri-mail-line"></i></div>
+              <div class="clink-body"><strong>Email</strong><span>aryanlohan92@gmail.com</span></div>
+              <i class="ri-arrow-right-up-line clink-arr"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-fill btn-full">Send Message</button>
+          <div class="form-success" id="form-success">
+            <i class="ri-checkbox-circle-fill"></i> Message sent — I'll get back to you soon.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner container">
+      <a href="#hero" class="footer-logo">Aryan<span>.</span></a>
+      <p>&copy; <span id="year"></span> Aryan Lohan. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/aryanlohan-09"           target="_blank" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+        <a href="https://www.linkedin.com/in/aaryanlohaan/"  target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+        <a href="mailto:aryanlohan92@gmail.com"                               aria-label="Email"><i class="ri-mail-line"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top"><i class="ri-arrow-up-s-fill"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
